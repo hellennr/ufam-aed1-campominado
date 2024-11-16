@@ -1,0 +1,140 @@
+Início do jogo: Fri Nov 15 23:19:00 2024
+
+Jogada válida: linha 1, coluna 1
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
+Jogada inválida: linha 2, coluna 2
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
+Jogada inválida: linha 3, coluna 3
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
+Jogada inválida: linha 4, coluna 4
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
+Jogada inválida: linha 5, coluna 5
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
+Jogada válida: linha 6, coluna 6
+Estado atual do campo:
+0 0 0 0 0 0 1 x x x x x x x x x x x x x 
+0 0 0 0 1 1 2 x x x x x x x x x x x x x 
+0 0 0 0 1 x x x x x x x x x x x x x x x 
+0 0 0 0 2 x x x x x x x x x x x x x x x 
+1 2 2 1 2 x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+x x x x x x x x x x x x x x x x x x x x 
+
