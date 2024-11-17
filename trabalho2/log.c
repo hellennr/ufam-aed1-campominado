@@ -14,7 +14,7 @@ void inicializa_log(Log *log)
     if (log->arquivo == NULL)
     {
         printf("Erro ao abrir o arquivo de log: %s\n", log->nome_arquivo);
-        exit(EXIT_FAILURE);
+        exit(1);
     }
 
     // Grava a data e hora de início no arquivo
@@ -24,7 +24,7 @@ void inicializa_log(Log *log)
     if (data_hora == NULL)
     {
         printf("Erro ao obter a data e hora.\n");
-        exit(EXIT_FAILURE);
+        exit(1);
     }
 
     fprintf(log->arquivo, "Início do jogo: %s\n", data_hora);

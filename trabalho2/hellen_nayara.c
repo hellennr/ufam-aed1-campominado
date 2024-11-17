@@ -19,32 +19,32 @@ int main()
 
 int espalhamento(int **bombas, char **jogo, int linhas, int colunas, int x, int y)
 {
-    int reveladas = 0; // Conta células reveladas.
+    int reveladas = 0; // Conta células reveladas
 
     if (jogo[x][y] != 'x')
     {
-        return 0; // Já foi revelada, não faz nada.
+        return 0; // Já foi revelada, não faz nada
     }
 
-    jogo[x][y] = bombas[x][y] + '0'; // Marca como revelada.
-    reveladas++;                     // Soma 1 ao contador.
+    jogo[x][y] = bombas[x][y] + '0'; // Marca como revelada
+    reveladas++;                     // Soma 1 ao contador
 
     if (bombas[x][y] != 0)
     {
-        return reveladas; // Para o flooding se a célula não for 0.
+        return reveladas; // Para o flooding se a célula não for 0
     }
 
-    // Percorre as 8 vizinhas.
+    // Percorre as 8 vizinhas
     for (int dx = -1; dx <= 1; dx++)
     {
         for (int dy = -1; dy <= 1; dy++)
         {
-            if (!(dx == 0 && dy == 0)) // Pula a própria célula.
+            if (!(dx == 0 && dy == 0)) // Pula a própria célula
             {
                 int novo_x = x + dx;
                 int novo_y = y + dy;
 
-                // Checa se a vizinha está dentro do campo.
+                // Checa se a vizinha está dentro do campo
                 if (novo_x >= 0 && novo_x < linhas && novo_y >= 0 && novo_y < colunas)
                 {
                     reveladas += espalhamento(bombas, jogo, linhas, colunas, novo_x, novo_y);
@@ -53,7 +53,7 @@ int espalhamento(int **bombas, char **jogo, int linhas, int colunas, int x, int 
         }
     }
 
-    return reveladas; // Retorna o total de células abertas.
+    return reveladas; // Retorna o total de células abertas
 }
 
 // Função que conta quantas bombas tem ao redor de cada célula
@@ -63,11 +63,11 @@ void conta_vizinhos(int **bombas, int linhas, int colunas)
     {
         for (int j = 0; j < colunas; j++)
         {
-            if (bombas[i][j] != -1) // Pula células que já têm bomba.
+            if (bombas[i][j] != -1) // Pula células que já têm bomba
             {
                 int cont_bombas = 0;
 
-                // Checa todas as vizinhas (8 direções).
+                // Checa todas as vizinhas (8 direções)
                 for (int k = -1; k <= 1; k++)
                 {
                     for (int l = -1; l <= 1; l++)
@@ -75,7 +75,7 @@ void conta_vizinhos(int **bombas, int linhas, int colunas)
                         int pos_x = i + k;
                         int pos_y = j + l;
 
-                        // Conta só as vizinhas válidas e que são bombas.
+                        // Conta só as vizinhas válidas e que são bombas
                         if (pos_x >= 0 && pos_x < linhas && pos_y >= 0 && pos_y < colunas && bombas[pos_x][pos_y] == -1)
                         {
                             cont_bombas++;
@@ -83,7 +83,7 @@ void conta_vizinhos(int **bombas, int linhas, int colunas)
                     }
                 }
 
-                bombas[i][j] = cont_bombas; // Salva quantas bombas têm ao redor.
+                bombas[i][j] = cont_bombas; // Salva quantas bombas têm ao redor
             }
         }
     }
@@ -92,33 +92,33 @@ void conta_vizinhos(int **bombas, int linhas, int colunas)
 // Função que inicializa o campo, coloca as bombas e conta os vizinhos
 void inicializar_campo(int **bombas, char **jogo, int linhas, int colunas, int num_bombas)
 {
-    srand(time(NULL)); // Gera uma semente pra criar números aleatórios.
+    srand(time(NULL)); // Gera uma semente pra criar números aleatórios
 
-    // Inicializa o campo vazio e todo coberto.
+    // Inicializa o campo vazio e todo coberto
     for (int i = 0; i < linhas; i++)
     {
         for (int j = 0; j < colunas; j++)
         {
-            bombas[i][j] = 0; // Sem bombas.
-            jogo[i][j] = 'x'; // Todas as células cobertas.
+            bombas[i][j] = 0; // Sem bombas
+            jogo[i][j] = 'x'; // Todas as células cobertas
         }
     }
 
-    // Coloca as bombas em posições aleatórias.
+    // Coloca as bombas em posições aleatórias
     int bombas_colocadas = 0;
     while (bombas_colocadas < num_bombas)
     {
         int rand_linha = rand() % linhas;
         int rand_coluna = rand() % colunas;
 
-        if (bombas[rand_linha][rand_coluna] != -1) // Evita colocar duas bombas no mesmo lugar.
+        if (bombas[rand_linha][rand_coluna] != -1) // Evita colocar duas bombas no mesmo lugar
         {
-            bombas[rand_linha][rand_coluna] = -1; // Marca a posição como bomba.
+            bombas[rand_linha][rand_coluna] = -1; // Marca a posição como bomba
             bombas_colocadas++;
         }
     }
 
-    conta_vizinhos(bombas, linhas, colunas); // Calcula quantas bombas têm ao redor de cada célula.
+    conta_vizinhos(bombas, linhas, colunas); // Calcula quantas bombas têm ao redor de cada célula
 }
 
 // Função que imprime o campo com as bombas
